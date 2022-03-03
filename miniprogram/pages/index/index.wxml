@@ -1,0 +1,90 @@
+<z-status-bar-title title="体育馆预约" />
+<view class="out">
+	<!-- 场地预约金刚区 -->
+	<view class="orderBox">
+		<view class="mainTitle">
+			<view class="H2">场地预约</view>
+			<view class="right" bind:tap="xuzhiHandler">
+				预约须知
+				<view class="iconfont more icon-xuzhi" />
+			</view>
+		</view>
+		<view class="btnBox">
+			<view class="line">
+				<view class="item" bind:tap="orderItemHandler" data-type='篮球'>
+					<view class="line1">
+						<view style="background-color: #0A73FF;" class="icon iconfont icon-lanqiu" />
+						<view class="name">篮球</view>
+					</view>
+					<view class="line2">今日剩余33%</view>
+				</view>
+				<view class="item" bind:tap="orderItemHandler" data-type='兵乓球'>
+					<view class="line1">
+						<view style="background-color: #DE2C3F;" class="icon iconfont icon-pingpangqiu" />
+						<view class="name">兵乓球</view>
+					</view>
+					<view class="line2">今日剩余33%</view>
+				</view>
+			</view>
+			<view class="line">
+				<view class="item">
+					<view class="line1" bind:tap="orderItemHandler" data-type='羽毛球'>
+						<view style="background-color: #F49837;" class="icon iconfont icon-yumaoqiu" />
+						<view class="name">羽毛球</view>
+					</view>
+					<view class="line2">今日剩余33%</view>
+				</view>
+				<view class="item">
+					<view class="line1" bind:tap="orderItemHandler" data-type='器械健身'>
+						<view style="background-color: #933396;" class="icon iconfont icon-jianshen" />
+						<view class="name">器械健身</view>
+					</view>
+					<view class="line2">今日剩余33%</view>
+				</view>
+			</view>
+		</view>
+	</view>
+	<!-- 我的预约 -->
+	<view class="orderListBox">
+		<view class="mainTitle">
+			<view class="H2">预约历史</view>
+			<!-- <view class="right">
+				预约须知
+				<view class="iconfont more icon-xuzhi" />
+			</view> -->
+		</view>
+		<view class="orderList">
+			<view
+			 class="orderItem"
+			 wx:for="{{orderHistoryList}}"
+			 wx:key="index"
+			 bind:tap="orderHistoryItemHandler"
+			 data-id="id"
+			>
+				<view class="leftIconBox">
+					<view style="background-color: {{item.color}};" class="icon iconfont {{item.icon}}" />
+				</view>
+				<view class="rightBox" style="{{index==(orderHistoryList.length-1)?'border-bottom: none;':''}}">
+					<view class="leftInner">
+						<view class="name">{{item.name}}</view>
+						<view class="time">{{item.time}}</view>
+					</view>
+					<view class="rightInner">
+						<view class="place">{{item.place}}</view>
+						<view class="iconfont more  icon-gengduo1" />
+					</view>
+				</view>
+			</view>
+		</view>
+	</view>
+</view>
+<!-- 订阅提示信息 -->
+<view class="pointCover" catch:tap="closePointHandler" wx:if="{{displayPointBox.display}}">
+	<view class="pointBox">
+		<view class="title">{{displayPointBox.title}}</view>
+		<!-- <view class="main">{{displayPointBox.value}}</view> -->
+		<rich-text class="main" nodes="{{displayPointBox.value}}" />
+		<view class="btn-inner-fill pointBtn" catch:tap="closePointHandler">同意</view>
+	</view>
+</view>
+

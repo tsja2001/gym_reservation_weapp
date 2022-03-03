@@ -1,0 +1,8 @@
+<view class="out {{ifBottomBorder?'border':''}}">
+	<view class="title-left-box">
+		<view class="title-border" wx:if='{{ifLeftBorder}}' />
+		<view class="title-inner">{{title}}</view>
+	</view>
+	<input class="right" placeholder="{{placehoder}}" bindinput="inputHandler" />
+</view>
+

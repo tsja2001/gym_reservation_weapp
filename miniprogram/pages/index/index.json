@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "z-status-bar-title": "/components/z-status-bar-title/index"
+  },
+  "navigationStyle": "custom"
+}

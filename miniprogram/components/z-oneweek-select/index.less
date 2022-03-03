@@ -1,0 +1,37 @@
+.outBox{
+    width: 100%;
+    .month{
+        font-weight: 600;
+    }
+    .dateBox{
+        margin-top: 20rpx;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        .itemBox{
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+            justify-content: center;
+            height: 90rpx;
+            width: 90rpx;
+            // background-color: #0A73FF;
+            // background: linear-gradient(to bottom, #519FFF, #3478F6);
+            border-radius: 50rpx;
+            color: black;
+            .week{
+                font-size: 24rpx;
+                font-weight: 600;
+            }
+            .date{
+                font-size: 23rpx;
+            }
+        }
+        .active{
+            background: linear-gradient(to bottom, #519FFF, #3478F6);
+            color: white;
+        }
+    }
+}

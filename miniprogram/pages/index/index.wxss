@@ -1,0 +1,177 @@
+.out .orderBox .mainTitle {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.out .orderBox .mainTitle .right {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  color: #3671F4;
+}
+.out .orderBox .mainTitle .right .iconfont {
+  font-weight: 600;
+}
+.out .orderBox .btnBox .line {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 30rpx;
+}
+.out .orderBox .btnBox .line .item {
+  height: 160rpx;
+  width: 330rpx;
+  background-color: white;
+  border-radius: 20rpx;
+  padding: 20rpx 22rpx;
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+}
+.out .orderBox .btnBox .line .item .line1 {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.out .orderBox .btnBox .line .item .line1 .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  width: 60rpx;
+  height: 60rpx;
+  border-radius: 20rpx;
+  font-size: 36rpx;
+}
+.out .orderBox .btnBox .line .item .line1 .name {
+  font-size: 35rpx;
+  font-weight: 600;
+  letter-spacing: 5rpx;
+}
+.out .orderBox .btnBox .line .item .line2 {
+  color: #808080;
+  font-size: 27rpx;
+}
+.out .orderListBox {
+  margin-top: 40rpx;
+}
+.out .orderListBox .mainTitle {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.out .orderListBox .mainTitle .right {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  color: #3671F4;
+}
+.out .orderListBox .mainTitle .right .iconfont {
+  font-weight: 600;
+}
+.out .orderListBox .orderList {
+  margin-top: 30rpx;
+  background: white;
+  border-radius: 20rpx;
+}
+.out .orderListBox .orderList .orderItem {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 105rpx;
+}
+.out .orderListBox .orderList .orderItem .leftIconBox {
+  width: 135rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.out .orderListBox .orderList .orderItem .leftIconBox .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  width: 60rpx;
+  height: 60rpx;
+  border-radius: 20rpx;
+  font-size: 36rpx;
+}
+.out .orderListBox .orderList .orderItem .rightBox {
+  padding-right: 30rpx;
+  flex: 1;
+  height: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1rpx solid #E9E8EA;
+}
+.out .orderListBox .orderList .orderItem .rightBox .leftInner .time {
+  font-size: 25rpx;
+  color: #868687;
+}
+.out .orderListBox .orderList .orderItem .rightBox .rightInner {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+}
+.out .orderListBox .orderList .orderItem .rightBox .rightInner .more {
+  margin-left: 10rpx;
+  color: #C3C2C6;
+}
+.pointCover {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pointCover .pointBox {
+  background-color: white;
+  width: 600rpx;
+  padding: 30rpx;
+  box-sizing: border-box;
+  border-radius: 20rpx;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+.pointCover .pointBox .item {
+  margin-bottom: 10rpx;
+  word-break: break-all;
+}
+.pointCover .pointBox .title {
+  font-size: 33rpx;
+  font-weight: 600;
+}
+.pointCover .pointBox .main {
+  color: #505050;
+  margin-top: 50rpx;
+}
+.pointCover .pointBox .departmentInner {
+  max-height: 650rpx;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+.pointCover .pointBox .departmentInner .item {
+  margin-bottom: 25rpx;
+}
+.pointCover .pointBox .departmentInner .item .dian {
+  font-weight: 800;
+  font-size: 35rpx;
+}
+.pointCover .pointBox .pointBtn {
+  margin-top: 60rpx;
+  color: #3769F4;
+}

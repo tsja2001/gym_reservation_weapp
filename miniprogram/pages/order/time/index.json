@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "z-oneweek-select": "/components/z-oneweek-select/index",
+    "z-line-key-value": "/components/c-basic/z-line-key-value/index"
+  }
+}

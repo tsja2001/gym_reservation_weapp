@@ -1,0 +1,8 @@
+{
+    "onReachBottomDistance": 50,
+    "usingComponents": {
+        "z-status-bar-title": "/components/z-status-bar-title/index",
+        "z-line-key-value": "/components/c-basic/z-line-key-value/index"
+    },
+    "navigationStyle": "custom"
+}

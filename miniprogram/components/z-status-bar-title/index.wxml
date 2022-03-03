@@ -1,0 +1,8 @@
+<view class="out" style="padding-top: {{statusBarPosition.top}}px;">
+	<view bind:tap="backHandler" class="inner H1 main-title" style=" height: {{statusBarPosition.height + 'px'}}">
+		<text class="iconfont icon-fanhui" wx:if="{{ifBackIcon}}" />
+
+								{{title}}
+				</view>
+</view>
+

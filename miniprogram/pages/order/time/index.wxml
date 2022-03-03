@@ -1,0 +1,15 @@
+<view class="out">
+	<z-oneweek-select bind:dateHandle="dateHandler" />
+	<view class="cardBox">
+		<z-line-key-value
+		 wx:for="{{timeList}}"
+		 key="{{item.time + (item.able?'':' (已满)')}}"
+		 ifMoreIcon="{{true}}"
+		 value=""
+		 bind:tap="timeItemHandler"
+		 data-index="{{index}}"
+		 style="{{item.able?'':'color:#a0a0a0'}}"
+		/>
+	</view>
+</view>
+

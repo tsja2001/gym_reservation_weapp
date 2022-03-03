@@ -1,0 +1,36 @@
+<z-status-bar-title title="我的" />
+<view class="out">
+	<view class="userBox">
+		<view class="left iconfont icon-touxiang" />
+		<view class="right">
+			<view class="name">杨卓然</view>
+			<view class="id">学号：2018290101</view>
+		</view>
+	</view>
+	<view class="cardBox" style="margin-top: 20rpx">
+		<z-line-key-value
+		 key="解除绑定"
+		 ifMoreIcon="{{true}}"
+		 value=""
+		 bind:tap="jiebangHandler"
+		 data-index="{{index}}"
+		/>
+		<z-line-key-value
+		 key="关于我们"
+		 ifMoreIcon="{{true}}"
+		 value=""
+		 bind:tap="aboutHandler"
+		 data-index="{{index}}"
+		/>
+	</view>
+</view>
+<!-- 订阅提示信息 -->
+<view class="pointCover" catch:tap="closePointHandler" wx:if="{{displayPointBox.display}}">
+	<view class="pointBox">
+		<view class="title">{{displayPointBox.title}}</view>
+		<!-- <view class="main">{{displayPointBox.value}}</view> -->
+		<rich-text class="main" nodes="{{displayPointBox.value}}" />
+		<view class="btn-inner-fill pointBtn" catch:tap="closePointHandler">确定</view>
+	</view>
+</view>
+

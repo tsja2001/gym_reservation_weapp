@@ -1,0 +1,15 @@
+<view class="out">
+	<view class="title H1">用户绑定</view>
+	<view class="from cardBox">
+		<z-input title="姓名" placehoder="请输入姓名" />
+		<z-input title="工号/学号" ifBottomBorder="{{false}}" placehoder="请输入工号/学号" />
+	</view>
+	<button
+	 class="button"
+	 size="default"
+	 type="primary"
+	 hover-class="button-hover"
+	>绑定
+	</button>
+</view>
+

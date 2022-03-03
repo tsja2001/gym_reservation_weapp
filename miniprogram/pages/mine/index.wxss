@@ -1,0 +1,89 @@
+.userBox {
+  width: 100%;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: white;
+  padding: 20rpx;
+  border-radius: 20rpx;
+  box-sizing: border-box;
+}
+.userBox .left {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  font-size: 100rpx;
+  border-radius: 50%;
+  border: 7rpx solid #b0b0b0;
+  color: #b0b0b0;
+  width: 120rpx;
+  height: 120rpx;
+}
+.userBox .right {
+  flex: 1;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  height: 120rpx;
+  margin-left: 30rpx;
+}
+.userBox .right .name {
+  font-size: 40rpx;
+  font-weight: 600;
+}
+.userBox .right .id {
+  color: #808080;
+}
+.pointCover {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.2);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pointCover .pointBox {
+  background-color: white;
+  width: 600rpx;
+  padding: 30rpx;
+  box-sizing: border-box;
+  border-radius: 20rpx;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+.pointCover .pointBox .item {
+  margin-bottom: 10rpx;
+  word-break: break-all;
+}
+.pointCover .pointBox .title {
+  font-size: 33rpx;
+  font-weight: 600;
+}
+.pointCover .pointBox .main {
+  color: #505050;
+  margin-top: 50rpx;
+}
+.pointCover .pointBox .departmentInner {
+  max-height: 650rpx;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+.pointCover .pointBox .departmentInner .item {
+  margin-bottom: 25rpx;
+}
+.pointCover .pointBox .departmentInner .item .dian {
+  font-weight: 800;
+  font-size: 35rpx;
+}
+.pointCover .pointBox .pointBtn {
+  margin-top: 60rpx;
+  color: #3769F4;
+}

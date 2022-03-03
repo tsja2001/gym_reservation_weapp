@@ -1,0 +1,13 @@
+{
+  "navigationBarTitleText": "体育馆预约",
+  "navigationBarBackgroundColor": "#3751BB",
+  "navigationBarTextStyle": "white",
+  "enablePullDownRefresh": true,
+  "onReachBottomDistance": 50,
+  "usingComponents": {
+    "z-status-bar-title": "/components/z-status-bar-title/index",
+    "z-line-key-value": "/components/c-basic/z-line-key-value/index",
+    "z-bottom-button": "/components/c-basic/z-bottom-button/index"
+  },
+  "navigationStyle": "custom"
+}

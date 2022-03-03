@@ -1,0 +1,192 @@
+.out{
+    .orderBox{
+        .mainTitle{
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center;
+            justify-content: space-between;
+            .right{
+                display: flex;
+                flex-flow: row nowrap;
+                align-items: center;
+                color: #3671F4;
+                .iconfont{
+                    font-weight: 600;
+                }
+            }
+        }
+        .btnBox{
+            .line{
+                display: flex;
+                flex-flow: row nowrap;
+                align-items: center;
+                justify-content: space-between;
+                margin-top: 30rpx;
+                .item{
+                    // flex: 1;
+                    height: 160rpx;
+                    width: 330rpx;
+                    background-color: white;
+                    border-radius: 20rpx;
+                    padding: 20rpx 22rpx;
+                    box-sizing: border-box;
+                    display: flex;
+                    flex-flow: column nowrap;
+                    justify-content: space-between;
+                    .line1{
+                        display: flex;
+                        flex-flow: row nowrap;
+                        align-items:center;
+                        justify-content: space-between;
+                        .icon{
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            color: white;
+                            // color: #0A73FF;
+                            width: 60rpx;
+                            height: 60rpx;
+                            // border-radius: 50%;
+                            border-radius: 20rpx;
+                            font-size: 36rpx;
+                            // font-weight: ;
+                        }
+                        .name{
+                            font-size: 35rpx;
+                            font-weight: 600;
+                            letter-spacing: 5rpx;
+                        }
+                    }
+                    .line2{
+                        color: #808080;
+                        font-size: 27rpx;
+                    }
+                }
+            }
+        }
+    }
+    .orderListBox{
+        margin-top: 40rpx;
+        .mainTitle{
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center;
+            justify-content: space-between;
+            .right{
+                display: flex;
+                flex-flow: row nowrap;
+                align-items: center;
+                color: #3671F4;
+                .iconfont{
+                    font-weight: 600;
+                }
+            }
+        }
+        .orderList{
+            margin-top: 30rpx;
+            background: white;
+            border-radius: 20rpx;
+            .orderItem{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                height: 105rpx;
+                .leftIconBox{
+                    width: 135rpx;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    .icon{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        color: white;
+                        // color: #0A73FF;
+                        width: 60rpx;
+                        height: 60rpx;
+                        // border-radius: 50%;
+                        border-radius: 20rpx;
+                        font-size: 36rpx;
+                        // font-weight: ;
+                    }
+                }
+                .rightBox{
+                    padding-right: 30rpx;
+                    flex: 1;
+                    height: 100%;
+                    display: flex;
+                    flex-flow: row nowrap;
+                    align-items: center;
+                    justify-content: space-between;
+                    border-bottom: 1rpx solid #E9E8EA;
+                    .leftInner{
+                        .time{
+                            font-size: 25rpx;
+                            color: #868687;
+                        }
+                    }
+                    .rightInner{
+                        display: flex;
+                        flex-flow: row nowrap;
+                        align-items: center;
+                        justify-content: center;
+                        .more{
+                            margin-left: 10rpx;
+                            color: #C3C2C6;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.pointCover {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.2);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .pointBox {
+        background-color: white;
+        width: 600rpx;
+        padding: 30rpx;
+        box-sizing: border-box;
+        border-radius: 20rpx;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        .item {
+            margin-bottom: 10rpx;
+            word-break: break-all;
+        }
+        .title {
+            font-size: 33rpx;
+            font-weight: 600;
+        }
+        .main {
+            color: #505050;
+            margin-top: 50rpx;
+        }
+        .departmentInner {
+            max-height: 650rpx;
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+            .item {
+                margin-bottom: 25rpx;
+                .dian {
+                    font-weight: 800;
+                    font-size: 35rpx;
+                }
+            }
+        }
+        .pointBtn {
+            margin-top: 60rpx;
+            color: #3769F4;
+        }
+    }
+}

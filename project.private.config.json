@@ -1,0 +1,54 @@
+{
+  "setting": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "测试页面",
+          "pathName": "pages/test/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "预约-时间选择",
+          "pathName": "pages/order/time/index",
+          "query": "type=羽毛球",
+          "scene": null
+        },
+        {
+          "name": "预约-场地选择",
+          "pathName": "pages/order/area/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "预定-详情",
+          "pathName": "pages/order/detail/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "我的",
+          "pathName": "pages/mine/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "绑定用户",
+          "pathName": "pages/bind/index",
+          "query": "",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

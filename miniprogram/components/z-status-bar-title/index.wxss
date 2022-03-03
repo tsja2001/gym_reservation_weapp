@@ -1,0 +1,22 @@
+@import "../../app.wxss";
+.out {
+  width: 100vw;
+  padding-bottom: 20rpx;
+}
+.out .main-title {
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: row nowrap;
+  /* align-items: center; */
+  align-items: flex-start;
+  justify-content: center;
+  justify-content: flex-start;
+  text-overflow: -o-ellipsis-lastline;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  word-break: break-all;
+  /* text-align: center; */
+}

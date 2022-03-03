@@ -1,0 +1,1 @@
+"/Applications/wechatwebdevtools.app/Contents/MacOS/cli" cloud functions deploy --e cloud1-4ggn044i930cc2f3 --n quickstartFunctions --r --project "/Users/yangzhuoran/Library/Mobile Documents/com~apple~CloudDocs/国区归档/程序/08项目/djtu-gym-order" --report_first --report

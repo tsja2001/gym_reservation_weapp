@@ -1,0 +1,44 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/mine/index",
+    "pages/order/detail/index",
+    "pages/order/area/index",
+    "pages/order/time/index",
+    "pages/test/index",
+    "pages/bind/index"
+  ],
+  "tabBar": {
+    "color": "#2D2C2E",
+    "selectedColor": "#213EB3",
+    "borderStyle": "white",
+    "list": [
+      {
+        "iconPath": "sources/home.png",
+        "selectedIconPath": "sources/home_active.png",
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "iconPath": "sources/mine.png",
+        "selectedIconPath": "sources/mine_active.png",
+        "pagePath": "pages/mine/index",
+        "text": "我的"
+      }
+    ]
+  },
+  "window": {
+    "backgroundColor": "#F2F1F5",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F2F1F5",
+    "navigationBarTitleText": "体育馆预约系统",
+    "navigationBarTextStyle": "black"
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}

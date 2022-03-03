@@ -1,0 +1,7 @@
+<view class="out">
+  <view class="title-left-box">
+    <view class="title-border"></view>
+    <view class="title-inner">{{title}}</view>
+  </view>
+  <view class="right"></view>
+</view>
