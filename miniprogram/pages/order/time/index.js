@@ -10,6 +10,18 @@ Page({
     // 可选时间
     timeList: [
       {
+        time: '10:00-11:00',
+        able: true
+      },
+      {
+        time: '11:00-12:00',
+        able: true
+      },
+      {
+        time: '12:00-13:00',
+        able: true
+      },
+      {
         time: '13:00-14:00',
         able: true
       },

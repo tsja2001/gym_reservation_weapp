@@ -35,6 +35,18 @@ Page({
         place: '场地7',
         able: false
       },
+      {
+        place: '场地8',
+        able: false
+      },
+      {
+        place: '场地9',
+        able: false
+      },
+      {
+        place: '场地10',
+        able: false
+      },
     ],
   },
 
