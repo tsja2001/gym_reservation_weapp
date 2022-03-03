@@ -1,0 +1,19 @@
+<view class="out">
+	<view class="cardBox">
+		<z-line-key-value key="类型" value="羽毛球" />
+		<z-line-key-value key="日期" value="2021-02-23" />
+		<z-line-key-value key="时间" value="14:00-15:00" />
+	</view>
+	<view class="cardBox placeList">
+		<z-line-key-value
+		 wx:for="{{placeList}}"
+		 key="{{item.place + (item.able?'':' (已满)')}}"
+		 ifMoreIcon="{{item.able}}"
+		 value=""
+		 bind:tap="placeItemHandler"
+		 data-index="{{index}}"
+		 style="{{item.able?'':'color:#a0a0a0'}}"
+		/>
+	</view>
+</view>
+

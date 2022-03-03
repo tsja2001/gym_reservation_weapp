@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "z-line-key-value": "/components/c-basic/z-line-key-value/index",
+    "z-title": "/components/c-basic/z-title/index"
+  }
+}
