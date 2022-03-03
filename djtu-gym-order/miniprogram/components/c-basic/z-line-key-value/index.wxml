@@ -1,0 +1,12 @@
+<view class="out {{ifBottomBorder?'border':''}}">
+	<view class="title-left-box">
+		<view class="title-border" wx:if="{{ifLeftBorder}}" />
+		<view class="title-inner">{{key}}</view>
+	</view>
+	<view class="right">
+		{{value}}
+		<text class="iconfont icon-gengduo1" wx:if="{{ifMoreIcon}}" />
+
+				</view>
+</view>
+

@@ -1,0 +1,21 @@
+<view class="outBox">
+	<view class="month">{{
+		dateList[currentIndex].year + '-' +
+		dateList[currentIndex].month + '-' +
+		dateList[currentIndex].date + ' ' +
+		dateList[currentIndex].day
+		}}</view>
+	<view class="dateBox">
+		<view
+		 class="itemBox {{index == currentIndex ? 'active': ''}}"
+		 wx:for="{{dateList}}"
+		 wx:key="index"
+		 bind:tap="itemHandler"
+		 data-index="{{index}}"
+		>
+			<view class="week">{{item.day}}</view>
+			<view class="date">{{item.date}}</view>
+		</view>
+	</view>
+</view>
+

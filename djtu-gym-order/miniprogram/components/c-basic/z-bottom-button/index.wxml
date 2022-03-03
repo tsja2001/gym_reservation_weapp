@@ -1,0 +1,21 @@
+<view class="bottombBtn" style="{{buttonStyle}}">
+    <block wx:if="{{content}}">
+        <view class="btn" catch:tap="btnHandle" style="{{rightStyle}}">{{content}}</view>
+    </block>
+    <block wx:else>
+        <view
+            class="left"
+            style="{{leftStyle}}; border: 3rpx solid {{color}}"
+            catch:tap="leftHandle"
+        >
+            {{leftContent}}
+        </view>
+        <view
+            class="right"
+            style="{{rightStyle}}; border: 3rpx solid {{color}}"
+            catch:tap="rightHandle"
+        >
+            {{rightContent}}
+        </view>
+    </block>
+</view>

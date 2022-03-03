@@ -1,0 +1,14 @@
+<z-status-bar-title title="预约详情" ifBackIcon="{{true}}" />
+<view class="out">
+	<view class="cardBox">
+		<z-line-key-value key="项目" value="足球" />
+		<z-line-key-value key="日期" value="2021-03-10" />
+		<z-line-key-value key="时间" value="12:00-13:00" />
+		<z-line-key-value key="场地" value="三号馆" ifBottomBorder="{{false}}" />
+	</view>
+	<view class="cardBox" style="margin-top:20rpx">
+		<z-line-key-value key="创建时间" value="2021-12-30 12:35" />
+		<z-line-key-value key="价格" value="20元" ifBottomBorder="{{false}}" />
+	</view>
+</view>
+

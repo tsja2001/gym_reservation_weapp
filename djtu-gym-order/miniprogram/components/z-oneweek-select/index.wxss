@@ -1,0 +1,35 @@
+.outBox {
+  width: 100%;
+}
+.outBox .month {
+  font-weight: 600;
+}
+.outBox .dateBox {
+  margin-top: 20rpx;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.outBox .dateBox .itemBox {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  height: 90rpx;
+  width: 90rpx;
+  border-radius: 50rpx;
+  color: black;
+}
+.outBox .dateBox .itemBox .week {
+  font-size: 24rpx;
+  font-weight: 600;
+}
+.outBox .dateBox .itemBox .date {
+  font-size: 23rpx;
+}
+.outBox .dateBox .active {
+  background: linear-gradient(to bottom, #519FFF, #3478F6);
+  color: white;
+}
