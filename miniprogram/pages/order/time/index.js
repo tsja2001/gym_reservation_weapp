@@ -7,6 +7,17 @@ Page({
   data: {
     // 当前选中的日期
     currentSelectDate: {},
+    // 可选校区
+    xiaoqu: [
+      {
+        name: '旅顺口校区'
+      },
+      {
+        name: '沙河口校区'
+      },
+    ],
+    // 当前选中
+    pickerSelectIndex: 0,
     // 可选时间
     timeList: [
       {
@@ -65,6 +76,15 @@ Page({
     wx.setNavigationBarTitle({
       title: options.type + '预约'
     });
+  },
+
+  /**
+   * picker
+   */
+  pickerHandler(e) {
+    this.setData({
+      pickerSelectIndex: e.detail.value
+    })
   },
 
   /**

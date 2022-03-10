@@ -1,3 +1,9 @@
+.xiaoqu {
+  width: 100%;
+  text-align: end;
+  color: #3671F4;
+  margin-bottom: -45rpx;
+}
 .cardBox {
   margin-top: 30rpx;
 }

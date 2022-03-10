@@ -1,4 +1,18 @@
 <view class="out">
+	<view class="xiaoqu">
+		<picker
+		 class=""
+		 mode="selector"
+		 range="{{xiaoqu}}"
+		 range-key="name"
+		 value=""
+		 bindchange="pickerHandler"
+		 bindcancel=""
+		>
+			{{xiaoqu[pickerSelectIndex].name}}
+			<text iconfont icon-gengduo1></text>
+		</picker>
+	</view>
 	<z-oneweek-select bind:dateHandle="dateHandler" />
 	<view class="cardBox">
 		<z-line-key-value

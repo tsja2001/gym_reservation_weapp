@@ -1,11 +1,11 @@
 {
   "pages": [
     "pages/index/index",
+    "pages/test/index",
     "pages/mine/index",
     "pages/order/detail/index",
     "pages/order/area/index",
     "pages/order/time/index",
-    "pages/test/index",
     "pages/bind/index"
   ],
   "tabBar": {
@@ -39,6 +39,9 @@
       "desc": "你的位置信息将用于小程序位置接口的效果展示"
     }
   },
+  "requiredBackgroundModes": [
+    "location"
+  ],
   "sitemapLocation": "sitemap.json",
   "style": "v2"
 }

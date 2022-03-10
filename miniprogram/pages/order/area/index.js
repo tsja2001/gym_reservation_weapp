@@ -72,23 +72,22 @@ Page({
       confirmText: '确定',
       confirmColor: '#0A73FF',
       success: (result) => {
-        console.log(1)
-        if (result.confirm) {
-          console.log(2)
-          wx.redirectTo({
-            url: '/pages/index/index',
-            success: (result) => {
-              wx.showToast({
-                title: '预定成功',
-                icon: 'success',
-                image: '',
-                duration: 1500,
-                mask: false,
-              });
-            },
-          });
+        // console.log(1)
+          wx.showToast({
+            title: '预定成功',
+            icon: 'success',
+            image: '',
+            duration: 1500,
+            mask: false,
+          })
+          // console.log(2)
+          // wx.switchTab({
+          //   url: '/pages/index/index',
+          //   success: (result) => {
+          //     ;
+          //   },
+          // });
 
-        }
       },
       fail: () => { },
       complete: () => { }

@@ -5,7 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    getData:''
   },
 
   /**
@@ -26,34 +26,7 @@ Page({
    * 生命周期函数--监听页面显示
    */  
   onShow: function() {
-    let sInfo = wx.getSystemInfoSync();
-    console.log(sInfo);
-    this.setData({
-      locationEnabled: sInfo.locationEnabled + "",
-      locationAuthorized: sInfo.locationAuthorized + ""
-    })
 
-    let that = this;
-    wx.getLocation({
-      type: 'wgs84',
-      isHighAccuracy: true,
-      altitude: true,
-      success(res) {
-        that.setData({
-          locationMini: "true",
-          location: res
-          // location: JSON.stringify(res)
-        })
-        console.log(res);
-      },
-      fail(err) {
-        that.setData({
-          locationMini: "false",
-          location: "小程序未开启授权"
-        })
-        console.log(err);
-      }
-    })
   },
 
   /**
@@ -63,11 +36,106 @@ Page({
 
   },
 
+  get(){
+    var that = this
+    wx.startLocationUpdateBackground({
+      success(res) {
+        that.getPos()
+      },
+      fail(res) {
+        wx.showModal({
+          cancelColor: 'cancelColor',
+          cancelText: '取消',
+          confirmColor: 'confirmColor',
+          confirmText: '确定',
+          content: '请点击右上角...,进入设置,设置定位权限为 使用时与离开后',
+          editable: true,
+          placeholderText: 'placeholderText',
+          showCancel: false,
+          title: '权限不足',
+          success: (result) => {},
+          fail: (res) => {},
+          complete: (res) => {},
+        })
+      }
+    })
+  },
+
+  getPos(){
+
+    var that = this
+    var { getData } = this.data
+    wx.onLocationChange(function (res) {
+
+      var item = 
+      '(' +
+      res.latitude +
+      ',' +
+      res.longitude +
+      '),'
+
+
+      getData += item
+
+      that.setData({
+        getData: getData,
+        res: res
+      })
+    })
+  },
+
+
+  stop(){
+    wx.stopLocationUpdate({
+      success: (res) => {},
+    })
+  },
+
+  clear(){
+    this.setData({
+      getData: ''
+    })
+  },
+
+  copy(){
+    var { getData } = this.data
+    // getData.length = getData.length - 1
+    getData = '[' + getData + ']'
+    // var getData = 'aaaaaa\naaaaaaa\nbbbbbbbbb'
+
+
+    // const searchRegExp = /\)\(/g
+
+    // const result = getData.replace(searchRegExp,'),(')
+
+
+    wx.setClipboardData({
+      data: getData,
+      success: function (res) {
+        wx.getClipboardData({
+          success: function (res) {
+            wx.showToast({
+              title: '复制成功'
+            })
+          }
+        })
+      }
+    })
+  },
+
+  textarea(e){
+    console.log(e)
+    // / 1.获取input 框的元素
+      var input = e.target
+// 2.获取input 框的值
+      var value = input.value
+// 3.通过setSelectionRange 选中文字
+      input.setSelectionRange(0, value.length)
+  },
   /**
    * 生命周期函数--监听页面卸载
    */
   onUnload: function () {
-
   },
 
   /**

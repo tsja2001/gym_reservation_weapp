@@ -1,15 +1,12 @@
 <view class="container">
-  <button wx:if="{{canIUse}}" open-type="openSetting">授权设置页</button>
-
-  <view style='margin-top:40rpx;'>地理位置的系统开关 {{locationEnabled}}</view>
-  <view>允许微信使用定位的开关 {{locationAuthorized}}</view>
-  <view>地理位置的系统开关 {{locationMini}}</view>
-
-  <view style='margin-top:40rpx;'>位置信息：</view>
-  <view>高度 {{location.altitude}} m</view>
-  <view>速度 {{location.speed}}</view>
-  <view>精确度 {{location.accuracy}} m</view>
-  <input style="font-size: 33rpx;" value='经度{{location.longitude}}'/>
-  <view>维度 {{location.latitude}}</view>
-  <view style='color:#666;width:100%;word-wrap:break-word;text-align:center;'>{{location}}</view>
+  <button type="primary" bindtap="get" style="margin-bottom: 10rpx;">开始获取</button>
+  <button type="primary" bindtap="stop"style="margin-bottom: 10rpx;">停止</button>
+  <button type="primary" bindtap="copy"style="margin-bottom: 10rpx;">复制结果</button>
+  <textarea  auto-height bindtouchstart="textarea" bindtouchforcechange="textarea" maxlength="-1" value="{{'['+ getData + ']'}}">
+  </textarea>
+  <!-- <view wx:for="{{getData}}" wx:key="index">
+    <view>({{item.latitude}},{{item.longitude}})</view>
+    <view style="height: 10rpx; width: 100%; border-bottom: 2rpx solid #a0a0a0;"></view>
+  </view> -->
+  <button type="primary" bindtap="clear">清除结果</button>
 </view>

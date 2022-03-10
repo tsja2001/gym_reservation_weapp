@@ -47,6 +47,12 @@
           "pathName": "pages/bind/index",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "测试页面",
+          "pathName": "pages/test/index",
+          "query": "",
+          "scene": null
         }
       ]
     }

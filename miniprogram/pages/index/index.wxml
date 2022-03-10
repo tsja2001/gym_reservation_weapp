@@ -1,4 +1,5 @@
 <z-status-bar-title title="体育馆预约" />
+<!-- <button type="primary" bindtap="dingwei">前往定位</button> -->
 <view class="out">
 	<!-- 场地预约金刚区 -->
 	<view class="orderBox">
